@@ -1,0 +1,18 @@
+.support-us-container{
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+    min-width: 800px;
+}
+
+.support-us-container h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+.support-us-container p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}

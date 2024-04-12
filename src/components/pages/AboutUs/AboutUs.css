@@ -1,0 +1,48 @@
+/* AboutUs.css */
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.about-title {
+  font-size: 2rem; /* Уменьшим размер заголовка */
+  color: #2c3e50; /* Темно-синий оттенок */
+  margin-bottom: 20px; /* Уменьшим отступ после заголовка */
+  text-transform: uppercase;
+}
+
+.about-description {
+  font-size: 1.2rem; /* Уменьшим размер текста */
+  color: #34495e; /* Светло-серый оттенок */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-description a {
+  color: #2980b9; /* Цвет синего неба */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.about-description a:hover {
+  color: #1abc9c; /* Бирюзовый оттенок */
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px; /* Уменьшим радиус скругления углов */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Уменьшим тень */
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03); /* Немного увеличим масштаб при наведении */
+}
