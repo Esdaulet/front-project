@@ -19,7 +19,15 @@ function Header() {
     },
     {
       path: "/about",
-      display: "О нас",
+      display: "Наши",
+    },
+    {
+      path: "/support",
+      display: "Поддержка",
+    },
+    {
+      path: "/contact",
+      display: "Контакты",
     },
   ];
   return (

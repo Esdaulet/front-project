@@ -6,6 +6,47 @@
   align-items: center;
   padding: 50px 0;
 }
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 123, 255, 0.5),
+    rgba(0, 188, 212, 0.5)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.about-image:hover::before {
+  opacity: 1;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
 
 .about-content {
   flex: 1;
@@ -26,23 +67,69 @@
   margin-bottom: 20px;
 }
 
+.about-title {
+  font-size: 3em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.about-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background-color: #6f55f2;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+.about-description {
+  font-size: 1.6em;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.about-description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(45deg, #6f55f2, #968bcd);
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.about-description:hover::before {
+  transform: translateX(50%);
+}
+
+.about-title:hover::after {
+  width: 120%;
+}
+
 .about-description a {
-  color: #2980b9; /* Цвет синего неба */
+  color: #6f55f2; /* Цвет синего неба */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .about-description a:hover {
-  color: #1abc9c; /* Бирюзовый оттенок */
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 8px; /* Уменьшим радиус скругления углов */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Уменьшим тень */
-  transition: transform 0.3s ease;
-}
-
-.about-image img:hover {
-  transform: scale(1.03); /* Немного увеличим масштаб при наведении */
+  color: #6f55f2; /* Бирюзовый оттенок */
 }

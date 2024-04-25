@@ -1,18 +1,250 @@
-.support-us-container{
-    margin-bottom: 100px;
-    text-align: center;
-    padding: 40px;
-    margin: 0 auto;
-    min-width: 800px;
+.support-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.support-us-container h2{
-    font-size: 32px;
-    margin-bottom: 20px;
-
+.faq-section {
+  margin-bottom: 40px;
 }
 
-.support-us-container p{
-    margin-bottom: 10px;
-    font-size: 18px;
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.contact-section {
+  border-top: 2px solid #333;
+  padding-top: 20px;
+}
+
+.toggle-form-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.support-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.faq-title {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  font-size: 1.3em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+}
+
+.toggle-form-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.faq-item {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.faq-item:hover::before {
+  opacity: 0.8;
+}
+
+.faq-item h3 {
+  font-size: 1.5em;
+  color: #fff700;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-item p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.form-textarea {
+  height: 200px;
+  padding: 10px;
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.pppp {
+  font-size: 2em;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ced4da;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.pppp:hover {
+  transform: translateY(-5px);
+  background-color: #d1ecf1;
+}
+
+.pppp::before {
+  content: "🚀";
+  display: block;
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.form-submit-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/* Анимация */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-form {
+  animation: fadeIn 0.5s ease;
 }
